@@ -1,55 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UReact</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <nav>
-    <div class="nav__container">
-      <a href="#" class="logo">
-      <img  src="./assets/Utah-University-Logo.png" alt="">
-      UReact
-      </a>
-      <ul class="nav__links">
-        <li>
-          <a href="#" class="nav__link">About</a>
-        </li>
-        <li>
-          <a href="#" class="nav__link">Blog</a>
-        </li>
-        <li>
-          <a href="#" class="nav__link">Pricing</a>
-        </li>
-        <li>
-          <a href="#" class="nav__link">Contact Us</a>
-        </li>
-        <li>
-          <a href="#" class="nav__link">Login</a>
-        </li>
-        <li>
-          <a href="#" class="nav__link nav__link--primary">Sign Up</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <header>
-    <div class="row">
-      <div class="header__description">
-        <h1 class="header__description--title">
-          Beautiful React Templates <span class="red">for you.</span>
-        </h1>
-        <p class="header__description--para">Our templates are easy to setup, understand and customize.
-          Fully modular components with a variety of pages and components.
-        </p>
-        <div class="email__wrapper">
-          <input class="header__email" type="text" placeholder="Your E-mail Address">
-          <button class="header__email--btn">Get Started</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UReact</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__container">
+        <a href="#" class="logo">
+          <img
+            class="logo__img"
+            src="./assets/Utah-University-Logo.png"
+            alt=""
+          />
+          UReact
+        </a>
+        <ul class="nav__links">
+          <li>
+            <a href="#" class="nav__link">About</a>
+          </li>
+          <li>
+            <a href="#" class="nav__link">Blog</a>
+          </li>
+          <li>
+            <a href="#" class="nav__link">Pricing</a>
+          </li>
+          <li>
+            <a href="#" class="nav__link">Contact Us</a>
+          </li>
+          <li>
+            <a href="#" class="nav__link">Login</a>
+          </li>
+          <li>
+            <a href="#" class="nav__link nav__link--primary">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header>
+      <div class="row header">
+        <div class="header__description">
+          <h1 class="header__description--title">
+            Beautiful React Templates <span class="red">for you.</span>
+          </h1>
+          <p class="header__description--para">
+            Our templates are easy to setup, understand and customize. Fully
+            modular components with a variety of pages and components.
+          </p>
+          <div class="email__wrapper">
+            <input
+              class="header__email"
+              type="text"
+              placeholder="Your E-mail Address"
+            />
+            <button class="header__email--btn">Get Started</button>
+          </div>
+          <div class="header__customers--wrapper">
+            <p class="header__customers">OUR TRUSTED CUSTOMERS</p>
+            <img
+              class="header__customers--img"
+              src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="header__img">
+          <img src="./assets/undraw_winter_designer_a-2-m7.svg" alt="" />
         </div>
       </div>
-    </div>
-  </header>
-</body>
+    </header>
+    <section>
+      <div class="row features">
+        <h5 class="features__title red">FEATURES</h5>
+        <h2 class="features__description">
+          We have Amazing <span class="red">Service.</span>
+        </h2>
+        <p class="features__para">
+          The service is world class, take advantage of what our website has to
+          offer.
+        </p>
+        <div class="features__space"></div>
+        <div class="services">
+          <div class="service">
+            <div class="service__size">
+              <span class="img__container">
+                <i class="fa fa-shield"></i>
+              </span>
+              <span class="service__text">
+                <span class="service__title">Secure</span>
+                <p class="service__description">
+                  We strictly only deal with vendors that provide top notch
+                  security.
+                </p>
+              </span>
+            </div>
+          </div>
+          <div class="service">
+            <div class="service__size">
+              <span class="img__container">
+                <i class="fa fa-headset" aria></i>
+              </span>
+              <span class="service__text">
+                <span class="service__title">24/7 Support</span>
+                <p class="service__description">
+                  Our round the clock support team is ready to help with your
+                  needs.
+                </p>
+              </span>
+            </div>
+          </div>
+          <div class="service">
+            <div class="service__size">
+              <span class="img__container">
+                <i class="fa fa-bars"></i>
+              </span>
+              <span class="service__text">
+                <span class="service__title">Customizable</span>
+                <p class="service__description">
+                  Customize your website the way you want.
+                </p>
+              </span>
+            </div>
+          </div>
+          <div class="service">
+            <div class="service__size">
+              <span class="img__container">
+                <i class="fa fa-arrow-right"></i>
+              </span>
+              <span class="service__text">
+                <span class="service__title">Reliable</span>
+                <p class="service__description">
+                  You can rely on our Amazing React Templates.
+                </p>
+              </span>
+            </div>
+          </div>
+          <div class="service">
+            <div class="service__size">
+              <span class="img__container">
+                <i class="fa fa-bolt"></i>
+              </span>
+              <span class="service__text">
+                <span class="service__title">Fast</span>
+                <p class="service__description">
+                  Our deliveries and websites are some of the fastests online.
+                </p>
+              </span>
+            </div>
+          </div>
+          <div class="service">
+            <div class="service__size">
+              <span class="img__container">
+                <i class="fa fa-hand-holding-heart"></i>
+              </span>
+              <span class="service__text">
+                <span class="service__title">Easy</span>
+                <p class="service__description">
+                  We worked hard on this website so you don't have to.
+                </p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="row qw">
+        <div class="qw__img">
+          <img src="./assets/Screenshot 2024-06-13 100928.png" alt="" />
+        </div>
+        <div class="qw__text">
+          <h5 class="qw__title red">QUALITY WORK</h5>
+          <h2 class="qw__description">
+            Designed & Developed by <span class="red">Professionals</span>
+          </h2>
+          <p class="qw__para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, esse
+            eligendi est adipisci voluptates maiores fuga cupiditate sunt
+            deleniti magni.
+          </p>
+          <div class="qw__button--wrapper">
+            <a href="https://google.com" class="qw__button">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="row steps">
+        <div class="steps__img--wrapper">
+          <img src="./assets/Untitled design.png" alt="" />
+        </div>
+        <div class="steps__text">
+          <h5 class="steps__title red">STEPS</h5>
+          <h2 class="steps__description">
+            Easy to <span class="red">Get Started</span>
+          </h2>
+          <ul class="steps__lists">
+            <li class="steps__list">
+              <div class="steps__number">01</div>
+              <div class="steps__list--wrapper">
+                <h6 class="steps__list--title">Register</h6>
+                <p class="steps__list--para">
+                  Create an account with us using Google or Facebook.
+                </p>
+              </div>
+            </li>
+            <li class="steps__list">
+              <div class="steps__number">02</div>
+              <div class="steps__list--wrapper">
+                <h6 class="steps__list--title">Download</h6>
+                <p class="steps__list--para">
+                  Browse and Download the template that you like from the
+                  marketplace.
+                </p>
+              </div>
+            </li>
+            <li class="steps__list">
+              <div class="steps__number">03</div>
+              <div class="steps__list--wrapper">
+                <h6 class="steps__list--title">Run</h6>
+                <p class="steps__list--para">
+                  Follow the instructions to setup and customize the template to
+                  your needs.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="row values">
+        <div class="values__text">
+          <h5 class="values__title red">VALUES</h5>
+          <h2 class="values__description">
+            We Always Abide by Our <span class="red">Principles.</span>
+          </h2>
+          <p class="values__para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus est
+            repellat eos, dolores praesentium quidem magni nulla nihil corrupti
+            reprehenderit veritatis dignissimos sequi illo. Sint debitis at
+            provident reprehenderit deleniti.
+          </p>
+          <div class="values__principles">
+            <div class="values__principle">
+              <div class="values__principle--title--wrapper">
+                <div class="values__principle--icon--green">
+                  <i class="fa fa-dollar-sign green"></i>
+                </div>
+                <div class="values__principle--title">Affordable</div>
+              </div>
+              <p>
+                We promise to offer you the best rate we can - at par with the
+                industry standard.
+              </p>
+            </div>
+            <div class="values__principle">
+              <div class="values__principle--title--wrapper">
+                <div class="values__principle--icon--yellow">
+                  <i class="fa fa-suitcase yellow"></i>
+                </div>
+                <div class="values__principle--title">Professionalism</div>
+              </div>
+              <p>
+                We assure you that our templates are designed and created by
+                professional designers.
+              </p>
+            </div>
+          </div>
+            <div>
+              <a class="values__button" href="https://google.com">Learn More</a>
+            </div>
+        </div>
+        <div class="values__img">
+          <img src="./assets/undraw_building_websites_i78t (3).svg" alt="" />
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
