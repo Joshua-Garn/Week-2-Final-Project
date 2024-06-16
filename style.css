@@ -23,7 +23,6 @@ nav {
 img {
     width: 100%;
     height: 100%;
-    max-height: 50vh;
 }
 
 p {
@@ -260,11 +259,10 @@ HEADER
 }
 
 .header__img {
-    width: 60%;
+    width: 100%;
     max-width: 768px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
 }
 
 /*
@@ -274,7 +272,7 @@ FEATURES
 */
 
 .features {
-    margin:171.5px;
+    margin:0 171.5px;
     padding: 96px 0;
     width: 100%;
     max-width: 1024px;
@@ -474,6 +472,8 @@ VALUES
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin: 0 166.5px;
+    padding: 96px 0;
 }
 
 .values__text {
@@ -556,6 +556,8 @@ PRICING
     justify-content: center;
     align-items: center;
     max-width: 1280px;
+    margin: 0 166.5px;
+    padding: 96px 0;
 }
 
 .pricing__text {
@@ -583,13 +585,26 @@ PRICING
 }
 
 .pricing__option {
+    flex-direction: column;
+    align-items: center;
+    margin: 64px 32px 0 0;
+    padding: 0 32px;
+    text-align: center;
+    width: 384px;
+    max-width: 384px;
+    border-radius: 10px;
+    border: .5px solid lightgray;
+    position: relative;
+}
+.pricing__option--middle {
     margin: 64px 32px 0 0;
     padding: 0 32px;
     text-align: center;
     max-width: 384px;
     width: 384px;
     border-radius: 8px;
-    border-color: 2px solid black;
+    background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+    color: white;
 }
 
 .pricing__option--top--left,
@@ -598,6 +613,8 @@ PRICING
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     height: 8px;
+    width: 100%;
+    position: absolute;
 }
 
 .pricing__option--top--left {
@@ -616,15 +633,18 @@ PRICING
 
 .name {
     font-size: 20px;
+    font-weight: 700;
 }
 
 .price {
     margin: 4px;
     font-size: 48px;
+    font-weight: 700;
 }
 
 .duration {
     font-size: 16px;
+    font-weight: 700;
     color: #a0aec0;
 }
 
@@ -634,26 +654,121 @@ PRICING
 }
 
 .pricing__option--feature {
-    margin: 0 -32px;
+    margin-left: -32px;
+    margin-right: -32px;
     padding: 32px;
     display: flex;
     flex-direction: column;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
 }
 
 .feature__title {
     font-size: 20px;
+    font-weight: 700;
+}
+
+.feature,
+.feature__primary {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
 }
 
 .feature {
-    font-size: 16px;
-    margin-top: 20px;
+    color: #718096;
+}
+
+.feature__primary {
+    color: white;
 }
 
 .pricing__button--wrapper {
     padding: 32px 64px;
 }
 
-.pricing__buttonm {
+.pricing__button--left,
+.pricing__button--middle,
+.pricing__button--right {
     font-size: 14px;
+    font-weight: 700;
     padding: 16px 32px;
+    border-radius: 9999px;
+    width: 100%;
+    border: none;
 }
+
+.pricing__button--left {
+    color: white;
+    background-image: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.pricing__button--middle {
+    color: rgb(76, 81, 191);
+}
+
+.pricing__button--right {
+    color: white;
+    background-image: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
+/*
+
+TESTIMONIALS
+
+*/
+
+.testimonials {
+    margin: 0 166.5px;
+    padding: 96px 0;
+}
+
+.testimonials__img--wrapper
+
+.testimonials__img
+
+.testimonials__text
+
+.testimonials__title
+
+.testimonials__description
+
+.testimonials__para
+
+.testimonials__review--wrapper
+
+.testimonials__list
+
+.testimonials__track
+
+.review__track
+
+.review__wrapper
+
+.review__stars
+
+.star
+
+.review__title
+
+.review__para
+
+.review__nav
+
+.review__person--wrapper
+
+.review__img
+
+.review__person--name--wrapper
+
+.review__person--name
+
+.review__person--occupation
+
+.review__buttons--wrapper
+
+.review__left--button
+
+.divider
+
+.review__right--button
