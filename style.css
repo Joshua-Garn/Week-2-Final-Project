@@ -326,6 +326,7 @@ p {
   font-size: 48px;
   font-weight: 900px;
   padding: 24px 0px;
+  text-align: center;
 }
 
 .features__section {
@@ -345,11 +346,14 @@ p {
 .features__descriptions {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .features__services--section {
   display: flex;
-  width: calc(100% / 3);
+  width: 326px;
+  margin: 0 16px;
+  padding: 32px 8px;
 }
 
 .services__group--description {
@@ -484,21 +488,27 @@ p {
 .dollar {
   border-radius: 50%;
   height: 36px;
-  border-color: gold;
-  background-color: #9ae64b;
-  opacity: 70%;
+  width: 36px;
+  background-color: rgb(0, 231, 0);
+  color: rgb(0, 53, 0);
+  opacity: 80%;
   padding: 11px 12px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .briefcase {
   border-radius: 50%;
   height: 36px;
-  border-color: gold;
-  background-color: #e9a3dd;
-  opacity: 70%;
+  width: 36px;
+  background-color: red;
+  color: rgb(54, 0, 0);
+  opacity: 80%;
   padding: 10px 12px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .values__split {
@@ -974,7 +984,7 @@ p {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0px 12px;   
+  padding: 0 4%;
 }
 
 .gsboxrow {
@@ -994,7 +1004,7 @@ p {
 }
 
 .gs__btn {
-  width: 30%;
+  width: 35%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1051,12 +1061,16 @@ p {
 .footer__links{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .footer__link{
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  width: calc(100% / 5);
+  max-width: 100%;
+  padding: 0 16px;
+  margin-top: 48px;
 }
 
 .footer__info{
@@ -1064,7 +1078,6 @@ p {
   justify-content: space-between;
   align-items: center;
   align-items: flex-end;
-
 }
 
 .footer__logo{
@@ -1090,9 +1103,9 @@ p {
 .footer__link--title{
   color: white;
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 900;
   margin: 0 auto;
-
+  padding-bottom: 4px;
 }
 
 .footer__figure{
@@ -1659,6 +1672,7 @@ p {
 
   .header__description {
       width: 80%;
+      text-align: center;
   }
 
   .header__description--title {
@@ -1701,6 +1715,7 @@ p {
 
   #quality__work {
       padding: 96px 32px 44px;
+      text-align: center;
   }
   .quality__left {
       width: 80%;
@@ -1712,7 +1727,7 @@ p {
   }
 
   .figure__quality {
-      width: 80%;
+      width: 100%;
       padding-top: 32px;
   }
 
@@ -1724,21 +1739,34 @@ p {
 
   #steps {
       padding-bottom: 44px;
+      text-align: center;
   }
   .steps__left {
       width: 80%;
       padding-bottom: 36px;
+      text-align: left;
   }
 
   .steps__right {
       width: 80%;
-      margin-left: 100px;
+      margin-left: 0px;
+      padding: 0;
+  }
+
+  .steps__right--small {
+    text-align: left;
+    padding-left: 10%;
+  }
+
+  .steps__img {
+    padding: 0;
   }
 
   /*VALUES*/
 
   .values__left {
       width: 80%;
+      text-align: center;
   }
 
   .values__sub-title {
@@ -1751,6 +1779,11 @@ p {
 
   .values__split {
       font-size: 16px;
+      text-align: left;
+  }
+
+  .values__left--split-1 {
+    text-align: left;
   }
 
   .values__figure {
@@ -1783,7 +1816,7 @@ p {
   }
 
   .pricing__plan {
-      width: 50%;
+      width: 68%;
       height: calc(100% / 3);
       padding-bottom: 32px;
   }
@@ -1878,6 +1911,7 @@ p {
 
   #testimonials {
       padding: 44px 0px 44px 0px;
+      text-align: center;
   }
 
   .testimonial__figure {
@@ -1891,6 +1925,10 @@ p {
 
   .testimonial__sub-title {
       font-size: 36px;
+  }
+
+  .ratings__container {
+    text-align: left;
   }
 
   .testimonial__img {
@@ -2024,10 +2062,12 @@ p {
   }
 
   .features__services--section {
-      display: grid;
-      grid-auto-flow: column;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       width: 100%;
       padding: 0px 0px 32px 0px;
+      text-align: center;
   }
 
   .services__small--title {
@@ -2079,13 +2119,13 @@ p {
 
   .steps__right {
       width: 80%;
-      margin-left: 100px;
   }
 
   .steps__right--small {
       display: grid;
       grid-auto-flow: column;
       padding-top: 32px;
+      padding-left: 8%;
   }
 
   /*VALUES*/
@@ -2163,7 +2203,7 @@ p {
   }
 
   .pricing__plan {
-      width: 100%;
+      width: 75%;
       height: calc(100% / 3);
       padding: 0px 0px 64px;
   }
@@ -2346,6 +2386,9 @@ p {
 
   .ind__footer--links {
       font-size: 14px;
+      display: flex;
+      flex-wrap: wrap;
+
   }
 
   .footer__divider {
